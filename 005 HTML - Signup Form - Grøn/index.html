@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planteelskere</title>
+</head>
+<body>
+    <form action="" method="post">
+        <header>
+          <h2>Create an account</h2>
+        </header>
+        <div>
+            <label for="firstname">
+                <p>First Name</p>
+                <input id="firstname" type="text" autocomplete="given-name" autofocus>
+            </label>
+        </div>
+        <div>
+            <label for="lastname">
+                <p>Last Name</p>
+                <input id="lastname" type="text" autocomplete="family-name">
+            </label>
+        </div>
+        <div>
+            <label for="dateofbirth">
+                <p>Date of Birth</p>
+                <input id="dateofbirth" type="date" min="1903-01-02" autocomplete="bday">
+            </label>
+        </div>
+        <div>
+          <label for="genderselect"><p>Choose your gender:</p></label>
+
+            <select name="gender" id="genderselect" autocomplete="sex">
+                <option selected disabled value="">--Please choose an option--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="attack helicopter">Attack Helicopter</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>	
+            <label><p>Username</p><input type="text" required autocomplete="username"></label>
+        </div>
+        <div>	
+            <label><p>E-mail</p><input type="email" required autocomplete="email"></label>
+        </div>
+        <div>	
+            <label><p>Password (8 characters minimum)</p><input type="password" required minlength="8"></label>
+        </div>
+        <div>	
+            <label><p>Upload an avatar</p><input type="file" accept="image/png, image/jpeg"></label>
+        </div>
+        <div>	
+            <label><br><b>Recieve monthly emails with new activity</b><input type="checkbox" checked></label>
+        </div>
+        <div>
+            
+        <br>
+        <button type="submit">Sign me up</button>
+        </div>
+    </form>
+</body>
+</html>
