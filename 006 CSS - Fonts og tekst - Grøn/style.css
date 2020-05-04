@@ -1,0 +1,45 @@
+body {
+    color: #333333;
+    line-height: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2 {
+    line-height: 4rem;
+}
+
+h1 {
+    color: #db4c4c;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #1c96bb;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #888888;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+img {
+    float:left;
+    margin: 0rem 2rem 2rem 0rem;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+}
