@@ -1,0 +1,62 @@
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.parent {
+    display: flex;
+    background-color: #ccc;
+}
+.parent-1 {
+    flex-direction: row
+}
+.parent-2 {
+    flex-direction: row-reverse
+}
+/*
+.parent-3 {
+    flex-direction: column
+}
+.parent-4 {
+    flex-direction: column-reverse
+}
+*/
+
+/* Alternative way without using classes: */
+/* Used instead of the parent-3 class */
+div > div:nth-child(7){
+    flex-direction: column;
+}
+/* Used instead of the parent-4 class */
+div > div:nth-child(9){
+    flex-direction: column-reverse;
+}
+
+.child {
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 42px;
+}
+.child-1 {
+    background-color: red;
+}
+.child-2 {
+    background-color: green;
+}
+.child-3 {
+    background-color: blue;
+}
+.child-4 {
+    background-color: orange;
+}
