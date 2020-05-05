@@ -1,0 +1,38 @@
+.wrapper, .square {
+    display: flex;
+}
+.wrapper {
+    width: 570px;
+    flex-wrap: wrap;
+}
+.square {
+    width: 180px;
+    height: 180px;
+    background-color: #999;
+    margin: 5px;
+}
+
+.child {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+}
+
+.square-1, .square-4, .square-7 {
+    justify-content: flex-start;
+}
+.square-2, .square-5, .square-8 {
+    justify-content: center;
+}
+.square-3, .square-6, .square-9 {
+    justify-content: flex-end;
+}
+.square-1, .square-2 .square-3 {
+    align-items: flex-start;
+}
+.square-4, .square-5, .square-6 {
+    align-items: center;
+}
+.square-7, .square-8, .square-9 {
+    align-items: flex-end;
+}
