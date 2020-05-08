@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+.header, .footer, .main, .sidebar {
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer {
+    height: 50px;
+    background-color: #666;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    background-color: #ccc;
+}
+
+.columns {
+    display: flex;
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+    background-color:#ccc;
+}
+
+.sidebar {
+    width: 20vw;
+    background-color: #999;
+}
