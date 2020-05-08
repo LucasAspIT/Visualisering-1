@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+}
+.header, .footer, .sidebar-first, .sidebar-second, .main {
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer {
+    height: 50px;
+    background-color: #666;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    background-color: #ccc;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.sidebar-first, .sidebar-second {
+    width: 20vw;
+    background-color: #999;
+}
+
+.sidebar-first {
+    order: -1;
+}
+
+.main {
+    flex: 1;
+    background-color: #ccc;
+}
