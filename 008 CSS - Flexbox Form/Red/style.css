@@ -86,3 +86,26 @@ html {
     filter: blur(5px);
     z-index: -1;
   }
+
+  /* Media query */
+  @media (max-width: 800px) { 
+    .flex-form {
+      flex-wrap: wrap;
+    }
+    .flex-form, input[type=search], select[name=guestselect], input[type=submit]{
+      width: 100vw;
+    }
+    label[for=from], label[for=to]{
+      width: 65px;
+    }
+    /* Viewport width - from/to label width & flex-form border width */
+    input[type=date]{
+      width: calc(100vw - 105px)
+    }
+    label[for=from], label[for=to], select[name=guestselect]{
+      text-align: center;
+    }
+    .flex-form input[type=search], .flex-form input[type=date], .flex-form select[name=guestselect], .flex-form label[for=from], .flex-form label[for=to] {
+      border-bottom: 1px solid lightgray;
+    }
+  }
