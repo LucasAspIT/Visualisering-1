@@ -70,19 +70,19 @@ html {
   .cover, .flex-form {
       display: flex;
   }
-
-.cover {
-        justify-content: center;
+  
+  .cover {
+      justify-content: center;
       align-items: center;
-}
+  }
 
-.flex-form {
+  .flex-form {
       border: 20px solid rgba(0,0,0,0.3);
       border-radius: 5px;
-}
+  }
 
-.video {
-    position: absolute;
-    top: 0;
-    filter: blur(5px);
-}
+  .video {
+      position: absolute;
+      top: 0;
+      filter: blur(5px);
+  }
