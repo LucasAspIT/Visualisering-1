@@ -5,8 +5,15 @@ body {
     padding: 5px;
 }
 
-.wrapper {
+.wrapper, .content, .columns {
     display: flex;
+}
+
+.content, .columns, .main {
+    flex: 1;
+}
+
+.wrapper {
     flex-direction: column;
     min-height: 100vh;
 }
@@ -16,16 +23,12 @@ body {
     background-color: #666;
 }
 
-.content {
-    display: flex;
-    flex: 1;
+.content, .main {
     background-color: #ccc;
 }
 
 .columns {
-    display: flex;
     justify-content: space-between;
-    flex: 1;
 }
 
 .sidebar-first, .sidebar-second {
@@ -35,9 +38,4 @@ body {
 
 .sidebar-first {
     order: -1;
-}
-
-.main {
-    flex: 1;
-    background-color: #ccc;
 }
