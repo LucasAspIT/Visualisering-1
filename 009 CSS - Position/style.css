@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 920px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    background: skyblue;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: white;
+}
+
+.overlay {
+    background: hsla(0, 0%, 0%, .5);
+}
+
+.cover, .overlay {
+    height: 100vh;
+}
+
+.boxes {
+    height: 500px;
+    width: 600px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    background: hsla(0, 0%, 0%, .8);
+}
+
+.box:nth-child(2) {
+    width: 150px;
+    height: 200px;
+    background: hsla(51, 100%, 50%, .8);
+}
+.box:nth-child(3) {
+    width: 500px;
+    height: 150px;
+    background: hsla(240, 100%, 50%, .8);
+}
+.box:nth-child(4) {
+    width: 150px;
+    height: 400px;
+    background: hsla(120, 100%, 25%, .8);
+}
+
+/* My stuff starts here */
+
+/* Gets pos:relative to make .cover pos:absolute position correctly */
+.hero {
+    position: relative;
+}
+.cover {
+    position: absolute;
+    top: 0px;
+}
+
+.overlay, nav, ul {
+    display: flex;
+}
+
+.overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+nav {
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+/* Gets pos:relative to make .box pos:absolute position correctly */
+.boxes {
+    position: relative;
+}
+.box {
+    position: absolute;
+}
+
+/* Black box */
+.box:nth-child(1){
+    top: 50px;
+}
+/* Yellow box */
+.box:nth-child(2){
+    top: 150px;
+    left: 170px;
+    z-index: 1;
+}
+/* Blue box */
+.box:nth-child(3){
+    bottom: 20px;
+    z-index: 2;
+}
+/* Green box */
+.box:nth-child(4){
+    right: 0px;
+    z-index: 3;
+}
