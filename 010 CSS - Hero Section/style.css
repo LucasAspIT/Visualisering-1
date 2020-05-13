@@ -1,0 +1,197 @@
+:root {
+    --primary-color:  hsl(197, 73%, 63%);
+    --border-radius: 5px;
+}
+
+/* Disables the visible up/down arrow in Firefox number forms */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    position: relative;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: hsla(0, 0%, 0%, 0.2);
+}
+
+.overlay h1, .overlay .lead {
+    margin: 0px;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+/* Logo positioning */
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    color: white;
+}
+
+/* Logo size and colour change */
+.logo svg {
+    height: 50px;
+    width: auto;
+    stroke: white;
+}
+
+/* Hamburger icon positioning */
+.hamburger-icon {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+/* Hamburger menu size change */
+.hamburger-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
+/* Hamburger menu toggle size and positioning */
+#toggle {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 9px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.overlay form {
+    background: hsla(0, 0%, 0%, 0.3);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.overlay form fieldset {
+    border: none;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    font-size: 1.5rem;
+    /* Resetting old padding and adding new */
+    padding: 0rem 0rem 1rem 0rem;
+    z-index: 1;
+}
+
+.overlay form .dollar {
+    position: absolute;
+    color: gray;
+    top: 4px;
+    left: 4px;
+}
+
+.overlay form #amount {
+    box-sizing: border-box; 
+    border: none;
+    width: 57%;
+    padding: 0.2rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.overlay form .form-dummy {
+    position: absolute;
+    border-radius: var(--border-radius);
+    height: 2.2rem;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+    background-color: white;
+}
+
+.overlay form .month {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    color: gray;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button--primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button--primary:hover {
+    background: hsl(17, 73%, 63%);
+    border-color: hsl(17, 73%, 63%);
+}
+
+.video {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    z-index: -2;
+}
+
+nav {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* Change display type to respect padding */
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+}
+
+/* Media query */
+@media (max-width: 650px) { 
+    .overlay h1, .overlay .lead, .overlay p {
+        text-align: center;
+    }
+    
+    .overlay form #amount {
+        width: 44%;
+    }
+
+    .button {
+        display: block;
+        text-align: center;
+    }
+
+    .button--primary {
+        margin-bottom: 0.5rem;
+    }
+}
