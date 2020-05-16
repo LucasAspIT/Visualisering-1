@@ -188,9 +188,56 @@ nav a:hover {
     top: 0px;
 }
 
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ 
+/* Alternative NAV */
 nav {
-    height: 50vh;
-    width: 19%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 5px solid hsla(0, 0%, 0%, 0.3);
+}
+
+.close-icon {
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    opacity: 0;
+}
+nav a {
+    visibility: hidden;
+}
+
+#toggle:checked ~ nav {
+    height: 330px;
+    width: 180px;
+    font-size: 2rem;
+    top: 12px;
+    right: 10px;
+}
+
+#toggle:checked ~ nav a {
+    visibility: visible;
+}
+#toggle:checked ~ .hamburger-icon {
+    opacity: 0;
+}
+#toggle:checked ~ .close-icon {
+    opacity: 1;
+}
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ 
+
+/* nav {
+    height: 330px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +249,7 @@ nav {
     top: 12px;
     right: -100%;
     border: 5px solid hsla(0, 0%, 0%, 0.3);
-}
+} */
 
 nav ul {
     list-style: none;
@@ -219,11 +266,9 @@ nav a {
 #toggle:checked ~ nav {
     right: 12px;
 }
-
 #toggle:checked ~ .hamburger-icon {
     right: -100%;
 }
-
 #toggle:checked ~ .close-icon {
     right: 22px;
 }
@@ -235,7 +280,7 @@ nav,
 #toggle:checked ~ nav,
 #toggle:checked ~ .hamburger-icon,
 #toggle:checked ~ .close-icon {
-    transition: ease-in 0.2s;
+    /* transition: ease-in 0.2s; */
 }
 
 /* Z-Indexes for keeping track easily */
