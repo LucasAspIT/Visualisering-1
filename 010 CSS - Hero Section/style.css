@@ -190,7 +190,7 @@ nav a:hover {
 
 /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ 
 /* Alternative NAV */
-nav {
+/* nav {
     height: 50px;
     width: 50px;
     display: flex;
@@ -232,10 +232,10 @@ nav a {
 }
 #toggle:checked ~ .close-icon {
     opacity: 1;
-}
+} */
 /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ 
 
-/* nav {
+nav {
     height: 330px;
     width: 180px;
     display: flex;
@@ -249,7 +249,7 @@ nav a {
     top: 12px;
     right: -100%;
     border: 5px solid hsla(0, 0%, 0%, 0.3);
-} */
+}
 
 nav ul {
     list-style: none;
@@ -280,7 +280,7 @@ nav,
 #toggle:checked ~ nav,
 #toggle:checked ~ .hamburger-icon,
 #toggle:checked ~ .close-icon {
-    /* transition: ease-in 0.2s; */
+    transition: ease-in 0.2s;
 }
 
 /* Z-Indexes for keeping track easily */
