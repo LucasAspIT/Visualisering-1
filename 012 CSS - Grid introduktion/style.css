@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container grid */
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+/* Header grid */
+header {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 70px 50px 450px;
+}
+.Herobanner {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 75px);
+}
+.SideA {
+    grid-row: 1 / 7;
+    grid-column: 1 / 3;
+}
+.Pic1 {
+    grid-row: 1 / 4;
+    grid-column: 3 / 5;
+}
+.Text1 {
+    grid-row: 4 / 6;
+    grid-column: 3 / 5;
+}
+.GapA {
+    grid-row: 1 / 6;
+    grid-column: 5 / 6;
+}
+.Pic2 {
+    grid-row: 1 / 4;
+    grid-column: 6 / 8;
+}
+.Text2 {
+    grid-row: 4 / 6;
+    grid-column: 6 / 8;
+}
+.GapB {
+    grid-row: 1 / 6;
+    grid-column: 8 / 9;
+}
+.Pic3 {
+    grid-row: 1 / 4;
+    grid-column: 9 / 11;
+}
+.Text3 {
+    grid-row: 4 / 6;
+    grid-column: 9 / 11;
+}
+.News {
+    grid-row: 6 / 7;
+    grid-column: 3 / 11;
+}
+.SideB {
+    grid-row: 1 / 7;
+    grid-column: 11 / 13;
+}
+.SideC {
+    grid-row: 7 / 9;
+    grid-column: 1 / 3;
+}
+.SoMe {
+    grid-row: 7 / 9;
+    grid-column: 3 / 9;
+}
+.NewsBut {
+    grid-row: 7 / 9;
+    grid-column: 9 / 11;
+}
+.SideD {
+    grid-row: 7 / 9;
+    grid-column: 11 / 13;
+}
+
+/* Footer grid */
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 75px);
+}
+.FooterSide1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+.FooterBranch {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+.FooterSupp {
+    grid-row: 1 / 3;
+    grid-column: 5 / 7;
+}
+.FooterBusin {
+    grid-row: 1 / 3;
+    grid-column: 7 / 9;
+}
+.FooterAbout {
+    grid-row: 1 / 3;
+    grid-column: 9 / 11;
+}
+.FooterSide2 {
+    grid-row: 1 / 3;
+    grid-column: 11 / 13;
+}
+.Footer2Side1 {
+    grid-column: 1 / 3;
+}
+.Footer2Links {
+    grid-column: 3 / 11;
+}
+.Footer2Logo {
+    grid-column: 11 / 12;
+}
+.Footer2Side2 {
+    grid-column: 12 / 13;
+}
+
+/* Header colours */
+.Banner, .BannerSide1, .BannerSide2{
+    background-color: #f2212f;
+}
+.Herobanner {
+    background-color: #e0dbdc;
+}
+/* Main colours */
+.SideC, .SoMe, .NewsBut, .SideD {
+    background-color: #e0dbdc;
+}
+/* Footer colours */
+.FooterSide1, .FooterBranch, .FooterSupp, .FooterBusin, .FooterAbout, .FooterSide2 {
+    background-color: #706f6f;
+    color: white;
+}
+.Footer2Side1, .Footer2Links, .Footer2Logo, .Footer2Side2 {
+    background-color: #444444;
+    color: white;
+}
+
+/* Temporary border to see grid setup */
+.grid * {
+    border: 2px solid goldenrod;
+}
