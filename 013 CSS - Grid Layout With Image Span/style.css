@@ -48,6 +48,8 @@ p {
     opacity: 0.7;
     /* Transform with background-attachment: fixed; only works properly in Chrome currently */
     /* transform: scale(0.98); */
+    margin: 3px;
+    height: calc(100% - 6px);
 }
 
 .grid > div:nth-of-type(1) {
