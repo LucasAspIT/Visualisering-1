@@ -1,29 +1,15 @@
 "use strict";
 
-// document.querySelector(".typing-effect").textContent = "Test";
-
 const fruits = ["Apple", "Lemon", "Panda", "Banana"];
 const p = document.querySelector(".typing-effect");
 
-async function typingEffect() {
-  for (let i = 0; i < fruits.length; i++) {
-    typeSentence([i]);
-
-    await sleep(3000);
-
-    deleteSentence();
-
-    await sleep(1000);
-  }
-  // Calls itself to repeat endlessly
-  typingEffect();
-}
+// Starts the whole thing
+typingEffect();
 
 // Types out the word, 1 character at a time
 async function typeSentence(array) {
   // Splits the array value after each character and returns it as a new array
   const typing = fruits[array].split("");
-  console.log(typing);
 
   for (let i = 0; i < typing.length; i++) {
     p.textContent += typing[i];
@@ -46,5 +32,16 @@ function sleep(time) {
   });
 }
 
-// Starts the whole thing
-typingEffect();
+async function typingEffect() {
+  for (let i = 0; i < fruits.length; i++) {
+    typeSentence([i]);
+
+    await sleep(3000);
+
+    deleteSentence();
+
+    await sleep(1000);
+  }
+  // Calls itself to repeat endlessly
+  typingEffect();
+}
