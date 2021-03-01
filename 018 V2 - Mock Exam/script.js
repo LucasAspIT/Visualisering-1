@@ -1,5 +1,6 @@
 "use strict";
 
+// NAVIGATION MENU ##############################################
 const navToggle = document.querySelector("#toggle");
 const navPosition = document.querySelector(".nav");
 
@@ -15,4 +16,28 @@ navToggle.addEventListener("change", function () {
   }
 });
 
-// document.querySelector(".nav").style.right = "600px";
+// PAGE LOAD ANIMATION ##########################################
+// Information input
+const dom = document.querySelector(".hero-overlay h1");
+
+// Types out the word, 1 character at a time
+async function typeSentence(dom) {
+  // Splits the object value of the selected array item after each character and returns it as a new array
+  const typing = dom.textContent.split("");
+  dom.textContent = "";
+
+  for (let i = 0; i < typing.length; i++) {
+    dom.textContent += typing[i];
+    await sleep(100);
+  }
+}
+
+// Does some weird magic & shit, I don't know
+function sleep(time) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+}
+
+// Starts the whole thing
+typeSentence(dom);
