@@ -52,25 +52,58 @@ header {
   cursor: pointer;
 }
 
-nav {
+.nav {
   z-index: 2;
   /* border: 1px solid red; */
-  background-color: cadetblue;
-  height: calc(100vh - 58px);
-  width: 600px;
+  background-color: white;
+  height: calc(100vh - 55px);
+  width: 400px;
   display: flex;
+  flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   /* text-align: center; */
-  position: sticky;
+  position: fixed;
   top: 55px;
-  /* right: 0; */
-  margin-left: 1303px;
+  right: -400px;
+  /* margin-left: 1303px; */
+  transition: all 0.5s;
 }
 
-nav ul {
+.nav h2 {
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.nav ul {
   list-style: none;
-  padding: 0px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.nav li {
+  padding: 20px 60px;
+}
+
+.nav li:hover {
+  background-color: rgb(255, 220, 60);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-info {
+  background-color: #ebebeb;
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.nav-info p {
+  font-style: normal;
 }
 
 .header-elements {
@@ -147,8 +180,8 @@ button:hover {
   /* z-index: -1; */
 }
 
-h1,
-h2 {
+.hero-overlay h1,
+.hero-overlay h2 {
   color: white;
   margin: 0;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
