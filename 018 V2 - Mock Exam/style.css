@@ -76,15 +76,16 @@ header {
 }
 
 .nav ul {
-  list-style: none;
+  list-style-position: inside;
+  list-style-image: url(images/svgs/baseline-keyboard-arrow-right.svg);
   text-decoration: none;
-  margin: 0;
+  /* margin-left: 60px; */
   padding: 0;
   font-size: 20px;
 }
 
 .nav li {
-  padding: 20px 60px;
+  padding: 18px 20px;
 }
 
 .nav li:hover {
