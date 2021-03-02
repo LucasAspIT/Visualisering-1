@@ -145,14 +145,17 @@ header {
 
 .nav ul {
   list-style-position: inside;
-  list-style-image: url(images/svgs/baseline-keyboard-arrow-right.svg);
+  list-style-type: none;
   text-decoration: none;
   padding: 0;
   font-size: 20px;
 }
 
 .nav li {
-  padding: 18px 20px;
+  padding: 18px 60px;
+  background-image: url(images/svgs/baseline-keyboard-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: 1em 1.1em;
 }
 
 .nav li:hover {
