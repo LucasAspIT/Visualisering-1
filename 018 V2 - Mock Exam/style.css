@@ -8,11 +8,12 @@
   --paragraph-size: 20px;
   --content-width: 1024px;
   font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* BROWSER SPECIFIC SETTINGS ################################ */
 
-/* Disables the visible up/down arrow in Chrome, Safari, Edge & number forms */
+/* Disables the visible up/down arrow in Chrome, Safari and Edge number forms */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -74,7 +75,7 @@ header {
   padding: 9px 0;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
@@ -176,6 +177,26 @@ header {
   font-style: normal;
 }
 
+.page-arrows {
+  z-index: 1;
+  position: relative;
+  left: 90%;
+}
+.page-arrow-01 {
+  top: -20px;
+}
+.page-arrow-02 {
+  top: 20px;
+}
+.page-arrow-03,
+.page-arrow-04,
+.page-arrow-05,
+.page-arrow-06,
+.page-arrow-07 {
+  position: absolute;
+  bottom: -20px;
+}
+
 /* HERO ##################################################### */
 
 .hero {
@@ -222,7 +243,7 @@ header {
 .services {
   justify-content: start;
   padding-top: 10px;
-  height: 900px;
+  height: 850px;
   position: relative;
 }
 
