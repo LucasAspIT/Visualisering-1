@@ -32,12 +32,15 @@ async function typeSentence(dom) {
   }
 }
 
-// Does some weird magic & shit, I don't know
+// Does some weird magic, I don't know
 function sleep(time) {
   return new Promise((resolve) => {
     setTimeout(resolve, time);
   });
 }
 
-// Starts the whole thing
-typeSentence(dom);
+// Wait until DOM has loaded
+document.addEventListener("DOMContentLoaded", function (event) {
+  // Starts the whole thing
+  typeSentence(dom);
+});
