@@ -12,7 +12,7 @@ navToggle.addEventListener("change", function () {
   if (this.checked) {
     navPosition.style.right = "0";
   } else {
-    navPosition.style.right = "-400px";
+    navPosition.style.right = `-${navPosition.offsetWidth}px`;
   }
 });
 
